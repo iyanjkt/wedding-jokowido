@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokowi & Iriana Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/circle.css" />
+
+    <!-- cdn icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i</h4>
+        <h1>Jokowi dan Iriana</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+        <div id="my-countdown" class="my-countdown simply-countdown-circle"></div>
+        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Wedding</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Wedding</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 17 Agustus 2025 di Jakarta</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud mengundang Bapak/Ibu,
+              Saudara/i untuk hadir pada acara pernikahan kami.
+            </p>
+          </div>
+        </div>
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Joko Widodo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere
+                  consequatur veniam neque quis porro, impedit accusamus animi explicabo
+                  voluptatibus.
+                </p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/hidup-jokowi.jpg"
+                  style="max-width: 400px"
+                  alt="jokowi"
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/iriana.jpg"
+                  style="max-width: 400px"
+                  alt="iriana"
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Iriana Ningsih</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere
+                  consequatur veniam neque quis porro, impedit accusamus animi explicabo
+                  voluptatibus.
+                </p>
+                <p>
+                  Putra dari Bpk. Ipsum <br />
+                  dan <br />Ibu Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home End  -->
+
+    <!-- Info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat : Masjid Agung At-Tin. <br />Jl. Taman Mini I No.3, RW.3, Pinang
+              Ranti, Kec. Makasar, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta
+            </p>
+            <a
+              href="https://maps.app.goo.gl/eM1VUE1FNAQwRB257"
+              target="_blank"
+              class="btn btn-light btn-sm"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkpan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan
+              namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi anda
+              salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 17 Agustus 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif untuk menjaga kekhidmatan acara.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Info End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="countdown/simplyCountdown.umd.js"></script>
+    <script>
+      // This will init all countdowns with the same options, but different themes
+      simplyCountdown(".my-countdown", {
+        year: 2025,
+        month: 8,
+        day: 17,
+        hours: 8,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+:root {
+    --pink: #f492ce;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    --sacramento: "Sacramento", cursive;
+    --worksans: "Work Sans", sans-serif;
+    --reenie: "Reenie Beanie", cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tiaan-human-1NMmEVNftu8-unsplash.jpg);
+    background-size: cover;
+    background-position-y: 10%;
+    background-position-x: center;
+    z-index: -1;
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 6rem;
+    text-shadow: 0px 1px 4px #0a0a0aaa;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+    text-shadow: 0px 1px 4px #0a0a0aaa;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    text-shadow: 0px 1px 4px #0a0a0aca;
+}
+
+.hero a {
+    color: var(--pink);
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    transition: all 0.5s;
+
+}
+
+.hero a:hover {
+    color: white;
+    background: #f492ce80;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid #f492ce80; */
+    ;
+    transform: scale(1.05)
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: var(--sacramento);
+    font-size: 3rem;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    height: 6rem;
+    backdrop-filter: blur(3px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.home {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/pawel-czerwinski-VxmiCp4xk_s-unsplash.jpg);
+    background-size: cover;
+    min-height: calc(100vh + 6rem);
+    margin-top: -6rem;
+    padding: 12rem 2rem 6rem;
+}
+
+.home h2 {
+    color: var(--pink);
+    font-family: var(--sacramento);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.home .couple {
+    margin-top: 4rem;
+}
+
+.home .couple h3 {
+    font-family: var(--sacramento);
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    min-height: 100vh;
+}
+
+.info h2 {
+    color: var(--pink);
+    font-family: var(--sacramento);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .description {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 80%;
+    }
+
+    .simply-countdown-circle>.simply-section {
+        width: 80px;
+        height: 80px;
+    }
+
+    .simply-countdown-circle>.simply-section::before {
+        inset: 5px
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .simply-countdown-circle>.simply-section {
+        width: 65px;
+        height: 65px;
+    }
+
+    .simply-countdown-circle>.simply-section::before {
+        inset: 4px
+    }
+
+    .mynavbar .nav-link {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .simply-countdown-circle>.simply-section {
+        width: 65px;
+        height: 65px;
+
+    }
+
+    .simply-countdown-circle>.simply-section::before {
+        inset: 3.5px
+    }
+
+}
