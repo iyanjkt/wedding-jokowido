@@ -15,7 +15,7 @@ html {
 body {
     font-size: 1.2rem;
     font-family: "Work Sans", sans-serif;
-    /* min-height: 4000px; */
+    /* overflow: hidden; */
 }
 
 .hero::before {
@@ -27,8 +27,8 @@ body {
     height: 100%;
     background-image: url(img/tiaan-human-1NMmEVNftu8-unsplash.jpg);
     background-size: cover;
-    background-position-y: 10%;
-    background-position-x: center;
+    background-position-y: center;
+    background-position-x: 40%;
     z-index: -1;
 }
 
@@ -107,7 +107,9 @@ body {
 
 .home h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
     color: var(--pink);
     font-family: var(--sacramento);
     font-size: 5rem;
@@ -207,13 +209,16 @@ body {
 }
 
 .story,
-.gallery {
+.gallery,
+.rsvp,
+.gifts {
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
@@ -223,7 +228,9 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p,
+.gifts p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -333,9 +340,42 @@ body {
     background-color: #f5f5f5;
 }
 
+.rsvp {
+    background-color: var(--bg);
+    color: #fff;
+}
 
+.rsvp button {
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    transition: 0.5s;
+}
 
+.rsvp button:hover {
+    background-color: #f472c2;
+    border: 1px solid #f472c2;
+    transform: scale(1.05);
+}
 
+footer {
+    padding: 1rem;
+    background-color: var(--pink);
+    color: white;
+}
+
+footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a:hover {
+    color: white;
+}
 
 /* Media Query */
 /* Laptop */
@@ -354,11 +394,11 @@ body {
     }
 
     .timeline::before {
-        left: 60px;
+        left: 85px;
     }
 
     .timeline li .timeline-image {
-        left: 15px;
+        left: 40px;
         margin-left: 30px;
         top: 5px;
     }
@@ -426,16 +466,25 @@ body {
         inset: 3.5px
     }
 
+    .timeline::before {
+        left: 55px;
+    }
+
     .timeline li .timeline-image {
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
+        left: 15px;
+        top: 25px;
     }
 
     .timeline li .timeline-panel {
         width: 65%;
-        transform: translateX(-25px);
+        transform: translateX(-5px);
+        left: 10px;
     }
 
-
+    .gallery {
+        padding: 0 1.5rem 0;
+    }
 
 }
