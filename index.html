@@ -78,7 +78,12 @@
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a
+                class="nav-link"
+                href="#rsvp"
+                onclick="scrollToCenter('rsvp'); return false;"
+                >RSVP</a
+              >
               <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
@@ -550,6 +555,20 @@
           });
         }
       });
+
+      function scrollToCenter(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+          const elementRect = element.getBoundingClientRect();
+          const absoluteElementTop = elementRect.top + window.pageYOffset;
+          const middle =
+            absoluteElementTop - window.innerHeight / 2 + elementRect.height / 2;
+          window.scrollTo({
+            top: middle,
+            behavior: "smooth", // Untuk animasi scroll yang halus
+          });
+        }
+      }
 
       const invitation = document.getElementById("undangan");
 
