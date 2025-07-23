@@ -377,6 +377,28 @@ footer a:hover {
     color: white;
 }
 
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.5rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    mix-blend-mode: difference;
+    color: white;
+    opacity: 0.3;
+    transition: all 0.5s;
+    display: none;
+}
+
+.audio-icon-wrapper:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: center;
+    opacity: 0.5;
+}
+
+
 /* Media Query */
 /* Laptop */
 @media (max-width: 992px) {
@@ -484,7 +506,7 @@ footer a:hover {
     }
 
     .gallery {
-        padding: 0 1.5rem 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
-
 }
